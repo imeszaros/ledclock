@@ -218,7 +218,7 @@ uint8_t SevenSegmentDisplay::_internalIndex(uint8_t segment, uint8_t row, uint8_
     }
 }
 
-SeparatorDisplay::SeparatorDisplay(LedBasedDisplayOutput output, uint8_t ledCount):
+SeparatorDisplay::SeparatorDisplay(LedBasedDisplayOutput output, uint16_t ledCount):
     _output(output),
     _maxLeds(ledCount),
     _ledCount(0),

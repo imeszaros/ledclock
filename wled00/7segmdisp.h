@@ -167,7 +167,7 @@ class SevenSegmentDisplay : public LedBasedDisplay {
 class SeparatorDisplay : public LedBasedDisplay {
 
     public:
-        SeparatorDisplay(LedBasedDisplayOutput output, uint8_t ledCount);
+        SeparatorDisplay(LedBasedDisplayOutput output, uint16_t ledCount);
 
         virtual ~SeparatorDisplay() override;
 
@@ -197,8 +197,8 @@ class SeparatorDisplay : public LedBasedDisplay {
         };
 
         LedBasedDisplayOutput _output;
-        uint8_t _maxLeds;
-        uint8_t _ledCount;
+        uint16_t _maxLeds;
+        uint16_t _ledCount;
         struct _Mapping* _mappings;
         CRGB _backgroundColor;
         bool _paintBackground;
