@@ -228,7 +228,7 @@ class LedBasedRowDisplay : public LedBasedDisplay {
         virtual void setMode(LedBasedDisplayMode mode) override;
 
     private:
-         uint8_t _displayCount;
+        uint8_t _displayCount;
         LedBasedDisplay** _displays;
 };
 
